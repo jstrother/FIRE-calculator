@@ -1,0 +1,20 @@
+calcualtes assests --
+
+calcualtes liabilities --
+
+then calcualtes net worth.
+
+
+takes in monthly income --
+
+takes in monthly expenses --
+
+calcualtes amount over or under budget --
+
+(maybe work in D3.js to show graphs?).
+
+
+saves everything to database.
+
+
+secure login
