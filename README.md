@@ -1,6 +1,6 @@
-# FIRE-calculator
+# fire-calculator
 
-> A calculator to help determine when you will reached FIRE status
+> A calculator to help determine when you will reach FIRE status.
 
 ## Build Setup
 
