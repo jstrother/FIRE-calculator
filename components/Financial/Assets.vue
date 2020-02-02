@@ -5,7 +5,7 @@
       <input v-model="assets" @keyup.enter="sumAssets" type="text" name="assets" />
       <button @click.prevent="sumAssets">Get Assets Total</button>
     </form>
-    <p>Total Assets: ${{ totalAssets }}</p>
+    <p>Total Assets: {{ totalAssets }}</p>
   </div>
 </template>
 
@@ -28,4 +28,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  padding: 0.5em;
+}
+</style>
