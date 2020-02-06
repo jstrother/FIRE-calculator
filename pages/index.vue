@@ -1,24 +1,19 @@
 <template>
   <div class="container">
     <h1>FIRE Calculator</h1>
-    <section>
-      <Assets />
-      <Liabilities />
-      <Worth />
-    </section>
+    <NetWorth />
+    <CashFlow />
   </div>
 </template>
 
 <script>
-import Assets from '@/components/Financial/Assets';
-import Liabilities from '@/components/Financial/Liabilities';
-import Worth from '@/components/Financial/Worth';
+import NetWorth from '@/components/Financial/NetWorth/NetWorth';
+import CashFlow from '@/components/Financial/CashFlow/CashFlow';
 
 export default {
   components: {
-    Assets,
-    Liabilities,
-    Worth,
+    NetWorth,
+    CashFlow,
   },
 };
 </script>
@@ -31,10 +26,5 @@ export default {
   flex-flow: column nowrap;
   justify-content: flex-start;
   text-align: center;
-
-  section {
-    display: flex;
-    flex-flow: column nowrap;
-  }
 }
 </style>

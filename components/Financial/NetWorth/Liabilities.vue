@@ -3,7 +3,7 @@
     <form>
       <label for="liabilites">Enter Liabilities Value:</label>
       <input v-model="liabilites" @keyup.enter="sumLiabilities" type="text" name="liabilites" />
-      <button @click.prevent="sumLiabilities">Get Liabilities Total</button>
+      <button @click.prevent="sumLiabilities">Get Total</button>
     </form>
     <p>Total Liabilities: {{ totalLiabilities }}</p>
   </div>

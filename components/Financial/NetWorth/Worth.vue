@@ -1,5 +1,5 @@
 <template>
-  <p>Total Worth: {{ totalAssets - totalLiabilities }}</p>
+  <p>Total Worth: {{ (totalAssets - totalLiabilities).toFixed(2) }}</p>
 </template>
 
 <script>
