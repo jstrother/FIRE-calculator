@@ -25,5 +25,6 @@ export default {
 section {
   display: flex;
   flex-flow: column nowrap;
+  padding-bottom: 2em;
 }
 </style>

@@ -15,14 +15,14 @@ import { mapState } from 'vuex';
 export default {
   data() {
     return {
-      income: 0,
+      income: '',
     };
   },
   computed: mapState(['totalMonthlyIncome']),
   methods: {
     sumIncome() {
       this.$store.commit('SUM_MONTHLY_INCOME', this.income);
-      this.income = 0;
+      this.income = '';
     },
   },
 };

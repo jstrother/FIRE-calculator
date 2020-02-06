@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <h1>FIRE Calculator</h1>
-    <NetWorth />
-    <CashFlow />
+    <section>
+      <NetWorth />
+      <CashFlow />
+    </section>
   </div>
 </template>
 
