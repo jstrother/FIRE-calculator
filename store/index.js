@@ -1,6 +1,6 @@
 import { add, multiply, divide } from 'ramda';
 
-const yearlyTotal = multiply(12);
+const yearlyTotal = multiply(12); // yearlyTotal is a curried function that muliplies any other number by 12. see lines 39 and 44.
 
 export const state = () => ({
   totalAssets: '0.00',
@@ -12,10 +12,6 @@ export const state = () => ({
   amountNeededForFire: '0.00',
   annualPostFireIncome: '0.00',
   estimatedWithdrawlRate: '0.04',
-  totalInvestments: '0.00',
-  monthlyInvestmentContribution: '0.00',
-  estimatedInvestmentInterestRate: '0.00',
-  compoundingPeriod: 'Annually',
 });
 
 export const mutations = {

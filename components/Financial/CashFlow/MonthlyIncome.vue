@@ -21,7 +21,7 @@ export default {
   computed: mapState(['totalMonthlyIncome']),
   methods: {
     sumIncome() {
-      this.$store.commit('SUM_MONTHLY_INCOME', this.income);
+      this.$store.commit('TOTAL_MONTHLY_INCOME', this.income);
       this.income = '';
     },
   },

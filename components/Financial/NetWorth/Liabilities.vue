@@ -21,7 +21,7 @@ export default {
   computed: mapState(['totalLiabilities']),
   methods: {
     sumLiabilities() {
-      this.$store.commit('SUM_LIABILITIES', this.liabilites);
+      this.$store.commit('TOTAL_LIABILITIES', this.liabilites);
       this.liabilites = '';
     },
   },

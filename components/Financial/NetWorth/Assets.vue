@@ -21,7 +21,7 @@ export default {
   computed: mapState(['totalAssets']),
   methods: {
     sumAssets() {
-      this.$store.commit('SUM_ASSETS', this.assets);
+      this.$store.commit('TOTAL_ASSETS', this.assets);
       this.assets = '';
     },
   },
