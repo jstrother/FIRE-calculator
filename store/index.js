@@ -1,22 +1,17 @@
 import { add, multiply, divide } from 'ramda';
 
-const yearlyTotal = multiply(12); // yearlyTotal is a curried function that muliplies any other number by 12. see lines 39 and 44.
-
 export const state = () => ({
   totalAssets: '0.00',
   totalLiabilities: '0.00',
   totalMonthlyIncome: '0.00',
   totalMonthlyExpenses: '0.00',
-  totalAnnualIncome: '0.00',
-  totalAnnualExpenses: '0.00',
   amountNeededForFire: '0.00',
   annualPostFireIncome: '0.00',
-  estimatedWithdrawlRate: '0.04',
 });
 
 export const mutations = {
   TOTAL_ASSETS(state, value) {
-    state.totalAssets = add(+state.totalAssets, value)
+    state.totalAssets = add(+state.totalAssets, +value)
       .toFixed(2)
       .toString();
   },
@@ -34,24 +29,12 @@ export const mutations = {
     state.totalMonthlyExpenses = add(+state.totalMonthlyExpenses, value)
       .toFixed(2)
       .toString();
-  },
-  TOTAL_ANNUAL_INCOME(state) {
-    state.totalAnnualIncome = yearlyTotal(+state.totalMonthlyIncome)
+
+    state.amountNeededForFire = divide(multiply(+state.totalMonthlyExpenses, 12), 0.04)
       .toFixed(2)
       .toString();
-  },
-  TOTAL_ANNUAL_EXPENSES(state) {
-    state.totalAnnualExpenses = yearlyTotal(+state.totalMonthlyExpenses)
-      .toFixed(2)
-      .toString();
-  },
-  AMOUNT_NEEDED_FOR_FIRE(state) {
-    state.amountNeededForFire = divide(+state.totalAnnualIncome, +state.estimatedWithdrawlRate)
-      .toFixed(2)
-      .toString();
-  },
-  ANNUAL_POST_FIRE_INCOME(state) {
-    state.annualPostFireIncome = multiply(+state.amountNeededForFire, +state.estimatedWithdrawlRate)
+
+    state.annualPostFireIncome = multiply(+state.amountNeededForFire, 0.04)
       .toFixed(2)
       .toString();
   },

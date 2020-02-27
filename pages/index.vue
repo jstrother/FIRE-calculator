@@ -4,6 +4,7 @@
     <section>
       <NetWorth />
       <CashFlow />
+      <FireNumbers />
     </section>
   </div>
 </template>
@@ -11,11 +12,13 @@
 <script>
 import NetWorth from '@/components/Financial/NetWorth/NetWorth';
 import CashFlow from '@/components/Financial/CashFlow/CashFlow';
+import FireNumbers from '@/components/Financial/Fire/FireNumbers';
 
 export default {
   components: {
     NetWorth,
     CashFlow,
+    FireNumbers,
   },
 };
 </script>
