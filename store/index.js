@@ -1,4 +1,11 @@
-import { add, multiply, divide } from 'ramda';
+import { add, multiply, divide, reverse, join, splitEvery, toString } from 'ramda';
+
+const addsComma = (num) => {
+  if (num.length > 3) {
+    return reverse(join(',', splitEvery(3, reverse(toString(num.toFixed(2))))));
+  }
+  return num;
+};
 
 export const state = () => ({
   totalAssets: '0.00',
@@ -11,9 +18,10 @@ export const state = () => ({
 
 export const mutations = {
   TOTAL_ASSETS(state, value) {
-    state.totalAssets = add(+state.totalAssets, +value)
-      .toFixed(2)
-      .toString();
+    state.totalAssets = addsComma(add(+state.totalAssets, +value));
+    // state.totalAssets = add(+state.totalAssets, +value)
+    //   .toFixed(2)
+    //   .toString();
   },
   TOTAL_LIABILITIES(state, value) {
     state.totalLiabilities = add(+state.totalLiabilities, value)
