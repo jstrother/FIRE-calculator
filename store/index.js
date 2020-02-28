@@ -2,7 +2,7 @@ import { add, multiply, divide, reverse, join, splitEvery, toString } from 'ramd
 
 const addsComma = (num) => {
   if (num.length > 3) {
-    return reverse(join(',', splitEvery(3, reverse(toString(num.toFixed(2))))));
+    return reverse(join(',', splitEvery(3, reverse(toString(num)))));
   }
   return num;
 };
