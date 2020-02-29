@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1>FIRE Calculator</h1>
     <TabCard :tabs="tabs" :initialTab="initialTab">
       <template slot="tab-head-netWorth">Net Worth</template>
       <template slot="tab-panel-netWorth">
@@ -43,7 +42,7 @@ export default {
 <style lang="scss">
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;

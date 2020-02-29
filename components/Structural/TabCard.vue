@@ -56,4 +56,40 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-header {
+  background-color: #000000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+  padding: 15px 8px 0;
+}
+
+.tab-heads {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 6px;
+  margin-top: -4px;
+}
+
+.tab-head {
+  padding: 5px 18px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-head--active {
+  background-color: #fff;
+  color: #000000;
+  transition: 0.4s;
+}
+
+.card-body {
+  padding: 20px 16px;
+}
+</style>

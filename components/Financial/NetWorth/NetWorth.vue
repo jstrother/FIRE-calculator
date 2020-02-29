@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h3>Total Net Worth</h3>
     <Assets />
     <Liabilities />
     <Worth />

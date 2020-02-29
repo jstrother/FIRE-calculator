@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h3>Monthly Cash Flow</h3>
     <MonthlyIncome />
     <MonthlyExpenses />
     <MonthlyVariance />
