@@ -1,18 +1,22 @@
 <template>
   <div class="container">
     <TabCard :tabs="tabs" :initialTab="initialTab">
+      <!-- spacer for readability -->
       <template slot="tab-head-netWorth">Net Worth</template>
       <template slot="tab-panel-netWorth">
         <NetWorth />
       </template>
+      <!-- spacer for readability -->
       <template slot="tab-head-cashFlow">Cash Flow</template>
       <template slot="tab-panel-cashFlow">
         <CashFlow />
       </template>
+      <!-- spacer for readability -->
       <template slot="tab-head-fireNumbers">FIRE Numbers</template>
       <template slot="tab-panel-fireNumbers">
         <FireNumbers />
       </template>
+      <!-- spacer for readability -->
     </TabCard>
   </div>
 </template>

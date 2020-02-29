@@ -36,7 +36,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #000000;
+  background-color: $headerColor;
   z-index: 100;
   box-sizing: border-box;
   padding: 0 20px;

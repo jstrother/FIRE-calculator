@@ -58,7 +58,7 @@ export default {
 
 <style lang="scss" scoped>
 .card-header {
-  background-color: #000000;
+  background-color: $headerColor;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -85,7 +85,7 @@ export default {
 
 .tab-head--active {
   background-color: #fff;
-  color: #000000;
+  color: $headerColor;
   transition: 0.4s;
 }
 
